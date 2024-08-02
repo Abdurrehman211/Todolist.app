@@ -1,0 +1,6 @@
+.App {
+  text-align: center;
+  background-image: radial-gradient(circle, #072b60, #00225c, #001958, #000e52, #03004c);
+  margin: auto auto;
+  overflow-x: hidden;
+}

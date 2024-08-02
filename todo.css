@@ -1,0 +1,239 @@
+#Home{
+    height: 100vh;
+    width: 100vw;
+    margin: auto auto;
+    overflow-x: hidden;
+}
+.main{
+    background-image: linear-gradient(to right, #000000, #000000, #000000, #000000, #000000, #0d0d0d, #161616, #000000, #000000, #000000, #000000, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.block{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto auto;
+}
+.child1{
+    width: 50%;
+    text-align: left;
+}
+.child2{
+    width: 50%;
+    /* height: 100vh; */
+    margin-top: 10%;
+    /* margin-top: 20%; */
+    /* background-color: rgb(0, 0, 0); */
+    background: blur(5px);
+    border-radius: 20px;
+    /* box-shadow: 7px 7px 20px 6px rgba(255, 255, 255, 0.5); */
+    padding: 20px;
+    margin-right: 20px;
+}
+.child2 > h1{
+    color: white;
+    font-size: 50px;
+    font-family: cursive;
+    animation: fadeInOut 3s forwards ease-out ;
+}
+@keyframes fadeInOut {
+ 0%{
+  scale: 0.4;
+  top: 0%;
+ }
+ 25%{
+  scale: 0.6;
+  top: 10%;
+ }
+ 50%{
+  scale: 0.8;
+  top: 20%;
+ }
+ 100%{
+  scale: 1;
+  top: 0%;
+ }
+
+}
+.child2 > p{
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+}
+#Moon-Gif{
+    margin-top: 120px;
+    margin-left: 30px;
+    width: 80%;
+    height: 60%;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+}
+.card svg {
+    height: 25px;
+  }
+  
+  .wrapper {
+    margin-left: 20px;
+    display: inline-flex;
+    list-style: none;
+    height: 15px;
+    /* width: 100%; */
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: -30px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon a {
+    color: #000000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(250, 250, 250, 0.1);
+  }
+  
+  .wrapper .facebook a:hover,
+  .wrapper .facebook a:hover .tooltip,
+  .wrapper .facebook a:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter a:hover,
+  .wrapper .twitter a:hover .tooltip,
+  .wrapper .twitter a:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram a:hover,
+  .wrapper .instagram a:hover .tooltip,
+  .wrapper .instagram a:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+@media screen and (min-width:300px) and (max-width:500px) {
+  .main {
+    background-image: linear-gradient(to right, #000000, #000000, #000000, #000000, #000000, #0d0d0d, #161616, #000000, #000000, #000000, #000000, #000000);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+}
+.block {
+  display: inline-block;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: auto auto;
+}
+#Moon-Gif {
+  margin-top: 120px;
+  margin-left: 50px;
+  width: 90%;
+  height: 55%;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+}
+.wrapper {
+  margin-left: -42px;
+  display: inline-flex;
+  list-style: none;
+  height: 15px;
+  width: 70%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+.child2 {
+  width: 90%;
+  /* height: 100vh; */
+  /* margin-top: 10%; */
+  /* margin-top: 20%; */
+  /* background-color: rgb(0, 0, 0); */
+  background: blur(5px);
+  border-radius: 20px;
+  /* box-shadow: 7px 7px 20px 6px rgba(255, 255, 255, 0.5); */
+  padding: 20px;
+  margin-right: 20px;
+}
+.child1 {
+  width: 90%;
+  text-align: center;
+}
+.child2 > h1 {
+  color: white;
+  font-size: 50px;
+  font-family: system-ui;
+  animation: fadeInOut 3s forwards ease-out;
+}
+.child2 > p {
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+}
+}
